@@ -1,0 +1,14 @@
+# Exclude Nextflow runtime files
+.nextflow/
+.nextflow.log*
+
+# Exclude results and outputs
+results/
+work/
+
+# Exclude temporary files
+*.tmp
+*.bak
+
+# Exclude conda environments
+.conda/
