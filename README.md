@@ -49,6 +49,15 @@ To test the pipeline using the included demo dataset, use the demo profile:
 The pipeline generates a MultiQC HTML report summarizing the analysis.
 
 ## **Profiles**
+The pipeline supports the following execution environments through Nextflow profiles:
+- `local_pc`: Runs the pipeline on your local machine.
+- `docker_on`: Executes the pipeline within a Docker container.
+- `univ_hpc`: Configures the pipeline for execution on a SLURM-based HPC cluster.
+
+For example, to run the pipeline using Docker: 
+
+      ```bash
+      nextflow run main.nf -profile docker_on --reads "<path_to_reads>"
 
 ## **Customization**
 You can adjust parameters directly in the nextflow.config file or override them in the command line. For example:
