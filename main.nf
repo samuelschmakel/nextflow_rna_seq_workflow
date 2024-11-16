@@ -1,12 +1,5 @@
 #! /usr/bin/env nextflow
 
-// pipeline parameters
-params.reads = "$projectDir/data/gut_{1,2}.fq"
-params.transcriptome_file = "$projectDir/data/transcriptome.fa"
-params.multiqc = "$projectDir/multiqc"
-params.outdir = "results"
-
-//println "reads: $params.reads"
 log.info """\
     R N A S E Q - N F   P I P E L I N E
     ===================================
