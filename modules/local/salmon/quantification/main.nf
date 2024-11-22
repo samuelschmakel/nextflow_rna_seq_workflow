@@ -10,10 +10,10 @@ process QUANTIFICATION {
     tuple val(sample_id), path(reads)
 
     output:
-    path "$sample_id"
+    path "${params.outdir}/${sample_id}"
 
     script:
     """
-    salmon quant --threads $task.cpus --libType=U -i $salmon_index -1 ${reads[0]} -2 ${reads[1]} -o $sample_id
+    salmon quant --threads $task.cpus --libType=U -i $salmon_index -1 ${reads[0]} -2 ${reads[1]} -o ${params.outdir}/${sample_id}
     """
  }
