@@ -6,7 +6,7 @@ This repository contains a simple RNA-Seq analysis workflow designed to process 
 
 ## **Features**
 - Supports paired-end FASTQ files as input.
-- Performs alignment using Salmon, quantification, and FASTQC.
+- Performs alignment, quantification, and FASTQC.
 - Generates a comprehensive [MultiQC](https://multiqc.info/) HTML report.
 
 ---
