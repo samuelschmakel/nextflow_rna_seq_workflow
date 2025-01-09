@@ -65,5 +65,7 @@ You can adjust parameters directly in the nextflow.config file or override them 
     ```bash
     nextflow run main.nf --outdir custom_results --threads 8
 
-## **Support**
-For questions, issues, or feature requests, feel free to open an issue.
+## **Contributing**
+For questions, issues, or feature requests, feel free to open an issue! You can also contribute by forking the repo and opening pull requests.
+
+All pull requests should be submitted to the main branch.
