@@ -31,15 +31,15 @@ To run this workflow, ensure the following software is installed:
 
 ## **Usage**
 
-**1. Running the pipeline with custom data:
+1. Running the pipeline with custom data:
 
     ```bash
-    nextflow run main.nf -profile local_pc --reads "<path_to_reads>"
+      nextflow run main.nf -profile local_pc --reads "<path_to_reads>"
 
 - **Input Requirement**: The pipeline expects paired-end FASTQ files named with a numbering scheme (e.g., `example1.fq`, `example2.fq`).
 - Replace <path_to_reads> with the path to your FASTQ files.
 
-**2. Running the pipeline with demo data:
+2. Running the pipeline with demo data:
 To test the pipeline using the included demo dataset, use the demo profile:
 
     ```bash
@@ -56,14 +56,16 @@ The pipeline supports the following execution environments through Nextflow prof
 
 For example, to run the pipeline using Docker: 
 
-      ```bash
-      nextflow run main.nf -profile docker_on --reads "<path_to_reads>"
+   ```bash
+   nextflow run main.nf -profile docker_on --reads "<path_to_reads>"
+   ```
 
 ## **Customization**
 You can adjust parameters directly in the nextflow.config file or override them in the command line. For example:
 
-    ```bash
-    nextflow run main.nf --outdir custom_results --threads 8
+   ```bash
+   nextflow run main.nf --outdir custom_results --threads 8
+   ```
 
 ## **Contributing**
 For questions, issues, or feature requests, feel free to open an issue! You can also contribute by forking the repo and opening pull requests.
